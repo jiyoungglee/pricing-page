@@ -1,0 +1,45 @@
+.heading{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: #4c525a;  
+  padding: 20px 0px;
+}
+
+.add-on-container{
+  font-family: 'Proximanova opt', sans-serif;
+  color: #4C525A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid .5px gray;
+  border-radius: 4px;
+  padding: 6% 6.5%;
+  margin: 20px 0px;
+}
+
+.add-on-type{
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.add-on-description{
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.add-on-right{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-top{
+  font-size: 40px;
+}
+
+.price-bottom{
+  font-size: 14px;
+  font-weight: lighter;
+}
