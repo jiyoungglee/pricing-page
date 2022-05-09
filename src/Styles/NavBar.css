@@ -8,6 +8,7 @@
   align-items: center;
   padding: 20px 20px 20px;
   background: #fff;
+  z-index: 1;
 }
 
 .menu{
@@ -64,8 +65,27 @@
   width: 400px;
   font-family: 'Proximanova opt', sans-serif;
   font-size: 17px;
+  height: max-content;
+  list-style-type: none;
+  box-shadow: rgba(2, 4, 69, 0.1) 0px 1px 60px 0px;
 }
 
 .option:hover .dropdown-content{
   display: block;
 }
+.dropdown-option{
+  margin: 0px 40px;
+  padding: 40px 0px;
+  border-bottom: solid .5px #02044528;
+}
+
+.dropdown-option:hover{
+  background-color: #02044528;
+}
+
+.dropdown-option-title{
+  font-family: serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+

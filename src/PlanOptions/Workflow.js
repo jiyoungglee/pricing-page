@@ -1,13 +1,14 @@
 import '../Styles/Card.css'
 
-function Workflow() {
+function Workflow({ frequency }) {
   return(
     <div className="card">
-      <div className="plan-price">
+      {frequency && <div className="banner">POPULAR</div>}
+      <div>
         <div className="plan">Workflow</div>
         <div className="price-container">
-          <span className="price-left">$19</span>
-          <span className="price-right">/MONTH</span>
+          <span className="price-left">{ frequency ? "$192" : "$19" }</span>
+          <span className="price-right">{ frequency ? "/YEAR" : "/MONTH" }</span>
         </div>
       </div>
       <ul className="features">

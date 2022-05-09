@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
 import NavBar from './Components/NavBar'
-import Workflow from './Components/Workflow';
-import WorkflowPlus from './Components/WorkflowPlus';
 import AddOns from './Components/AddOns';
 import FAQ from './Components/FAQ';
 import PlansPricing from './Components/PlansPricing';
@@ -17,14 +15,10 @@ function App() {
   },[]);
 
   return (
-    <div>
+    <div className="page">
       <NavBar />
-      <div className="page">
+      <div className="pricing-page">
         <PlansPricing />
-        <div className="pp-card-section">
-          <Workflow />
-          <WorkflowPlus />
-        </div>
         <AddOns />
         <FAQ />
       </div>

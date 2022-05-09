@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 39%;
+  padding-right: 38.5%;
 }
 
 .frequency {
@@ -10,14 +10,15 @@
   justify-content: space-evenly;
   font-family: sans-serif;
   align-items: center;
+  font-weight: bold;
 }
 
 .switch{
-  margin: 0px 20px;
+  margin: 0px 30px;
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 53px;
+  height: 30px;
 }
 
 .switch input {
@@ -33,10 +34,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px;
+  background-color: #00B289;
+  border-radius: 35px;
 }
 
 .slider:before {
@@ -44,23 +43,20 @@
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
-  bottom: 4px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
-  transition: .4s;
+  transition: .1s;
   border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #00B289;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #00B289;
-}
-
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
 }
+
+.frequency-checked {
+  opacity: .5;
+}
+

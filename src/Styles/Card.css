@@ -8,6 +8,8 @@
   background-color: #fbfcff;
   color: #4C525A;
   min-width: fit-content;
+  position: relative;
+  overflow: hidden;
 }
 
 .plan{
@@ -64,4 +66,20 @@ ul.features li{
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+}
+
+.banner{
+  position: absolute;
+  right: -14%;
+  top: 9%;
+  background-color: #00B289;
+  color: #fff;
+  padding: 10px 0px;
+  height: 20px;
+  width: 300px;
+  font-weight: bold;
+  font-size: 18px;
+  transform: rotate(45deg);
+  text-align: center;
+  letter-spacing: 1px;
 }

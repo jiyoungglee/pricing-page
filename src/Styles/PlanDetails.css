@@ -1,0 +1,4 @@
+.pp-card-section{
+  display:flex;
+  justify-content: space-between;
+}

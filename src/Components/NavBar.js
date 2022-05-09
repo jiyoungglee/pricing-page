@@ -17,17 +17,17 @@ function NavBar() {
             <FontAwesomeIcon className="carat" icon={faAngleDown} />
           </a>
           <div className="dropdown-content">
-            <div>
-              <div>Bonsai Workflow</div>
-              <div>Look professional, win more clients and manage your business from one place</div>
+            <div className="dropdown-option">
+              <div className="dropdown-option-title">Bonsai Workflow</div>
+              <div className="dropdown-option-desc">Look professional, win more clients and manage your business from one place</div>
             </div>
-            <div>
-              <div>Bonsai Tax</div>
-              <div>Track expenses, maximize tax write-offs, and estimate taxes without the headache</div>
+            <div className="dropdown-option">
+              <div className="dropdown-option-title">Bonsai Tax</div>
+              <div className="dropdown-option-desc">Track expenses, maximize tax write-offs, and estimate taxes without the headache</div>
             </div>
-            <div>
-              <div>Bonsai Cash</div>
-              <div>Bonsai's all-in-one financial hub: No fees and lightning fast payouts</div>
+            <div className="dropdown-option">
+              <div className="dropdown-option-title">Bonsai Cash</div>
+              <div className="dropdown-option-desc">Bonsai's all-in-one financial hub: No fees and lightning fast payouts</div>
             </div>
           </div>
         </li>
