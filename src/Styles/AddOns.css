@@ -8,7 +8,6 @@
 }
 
 .add-on-container {
-  color: #1d4289;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +18,8 @@
 
 .add-on-type {
   font-size: 20px;
-  font-weight: 550;
+  font-weight: bolder;
+  line-height: 40px;
 }
 
 .add-on-description {
@@ -29,11 +29,14 @@
 
 .add-on-right{
   font-size: 30px;
+  color: #1d4289;
+  margin-left: 10px;
   text-align: center;
 }
 
 .price-top{
   font-size: 40px;
+  
 }
 
 .price-bottom{

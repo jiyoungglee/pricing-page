@@ -3,19 +3,19 @@ import '../Styles/AddOns.css'
 function AddOns() {
   return (
     <div>
-      <div className="heading">Super charge your work with add-ons</div>
+      <div className="heading">Additional Add-On Features</div>
       <div className="add-ons">
         <div className="add-on-container">
           <div className="add-on-left">
-            <div className="add-on-type">Collaborators</div>
-            <div className="add-on-description">Invite other users to specific projects for limited access and functionality.</div>
+            <div className="add-on-type">Feature 1</div>
+            <div className="add-on-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>  
           <div className="add-on-right">Free</div>
         </div>
         <div className="add-on-container">
           <div className="add-on-left">
-            <div className="add-on-type">Partners</div>
-            <div className="add-on-description">Invite other users for full account access and company management.</div>
+            <div className="add-on-type">Feature 2</div>
+            <div className="add-on-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
           </div>
           <div className="add-on-right">
             <div className="price-top">$9</div>
@@ -24,8 +24,8 @@ function AddOns() {
         </div>
         <div className="add-on-container">
           <div className="add-on-left">
-            <div className="add-on-type">Bonsai Tax</div>
-            <div className="add-on-description">Track expenses, identify write-offs, and estimate quarterly taxes easily.</div>
+            <div className="add-on-type">Feature 3</div>
+            <div className="add-on-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
           <div className="add-on-right">
             <div className="price-top">$10</div>
