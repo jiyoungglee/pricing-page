@@ -1,16 +1,21 @@
 .card{
-  display: inline-block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: white;
+  color: #4C525A;
+  position: relative;
   border: solid .5px gray;
   border-radius: 4px;
-  width: 35%;
-  padding: 6% 6.5%;
-  font-family: sans-serif;
-  background-color: #fbfcff;
-  color: #4C525A;
+  height: 600px;
+}
+
+
+/* .card{
+  display: inline-block;
   min-width: fit-content;
   position: relative;
-  overflow: hidden;
-}
+} */
 
 .plan{
   font-size: 25px;
@@ -19,12 +24,11 @@
 
 .price-container{
   padding: 30px 0px;
-  border-bottom: solid 2px #00B289;
+  border-bottom: solid 2px #1d4289;
 }
 
 .price-left{
   font-size: 60px;
-  font-weight: bold;
 }
 
 .price-right{
@@ -35,10 +39,11 @@
 .features {
   list-style-type: none;
   margin: 0px;
-  padding: 20px 0px; 
+  padding: 20px 0px;
+  height: 55%;
 }
 
-ul.features li{
+.features li{
   margin: 1em 0em;
   background-image: url("https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg");
   background-repeat: no-repeat;
@@ -48,7 +53,7 @@ ul.features li{
 
 .badge{
   color:#fff;
-  background-color: #f8db62;
+  background-color: #1d4289;
   padding: 1px 5px;
   margin: 0px 7px;
   font-size: 12px;
@@ -57,14 +62,13 @@ ul.features li{
 
 .start-button{
   padding: 22px;
-  background-color: #00B289;
+  background-color: #1d4289;
   color: #fff;
   font-family: 'Proximanova opt', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  border: 1px solid #00B289;
+  border: 1px solid #1d4289;
   border-radius: 4px;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -72,7 +76,7 @@ ul.features li{
   position: absolute;
   right: -14%;
   top: 9%;
-  background-color: #00B289;
+  background-color: #1d4289;
   color: #fff;
   padding: 10px 0px;
   height: 20px;
@@ -82,4 +86,10 @@ ul.features li{
   transform: rotate(45deg);
   text-align: center;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+      flex-shrink: 1;
+    }
 }

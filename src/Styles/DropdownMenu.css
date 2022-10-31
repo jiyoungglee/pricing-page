@@ -1,0 +1,14 @@
+.dropdown-menu{
+  list-style: none;
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+.dropdown-menu li{
+  font: normal 16px Montserrat, sans-serif;
+  padding: 10px 0px;
+}
+
+.dropdown-menu li:hover{
+  font-weight: bold;
+}

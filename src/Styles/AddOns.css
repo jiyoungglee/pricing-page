@@ -7,32 +7,28 @@
   padding: 20px 0px;
 }
 
-.add-on-container{
-  font-family: 'Proximanova opt', sans-serif;
-  color: #4C525A;
+.add-on-container {
+  color: #1d4289;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: solid .5px gray;
-  border-radius: 4px;
   padding: 6% 6.5%;
   margin: 20px 0px;
-  background-color: #fff;
+  border: 1px solid #1d4289;
 }
 
-.add-on-type{
+.add-on-type {
   font-size: 20px;
   font-weight: 550;
 }
 
-.add-on-description{
+.add-on-description {
   font-weight: lighter;
   font-size: 16px;
 }
 
 .add-on-right{
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
 }
 

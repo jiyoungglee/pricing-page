@@ -1,10 +1,5 @@
-.faq-section{
-  font-family: sans-serif;
-}
-
-h1 {
-  text-align: center;
-  color: #00B289;
+.faq-section {
+  padding-top: 15px;
 }
 
 h2 {
@@ -21,8 +16,7 @@ h2 {
 }
 
 .faq-button:hover {
-  color: #00B289;
-  cursor: pointer;
+  color: #1d4289;
 }
 
 .faq-description {

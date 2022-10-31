@@ -1,0 +1,10 @@
+.dropdown-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  font-size: 16px;
+  font-family: inherit;
+}
