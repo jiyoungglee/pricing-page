@@ -9,7 +9,11 @@ function NavBar() {
   const menuRef = useRef(null);
 
   function toggleMenu() {
-    setModalOpen((modalOpen) => !modalOpen);
+    setModalOpen(true);
+    document.body.style.overflow= 'hidden';
+    document.body.style.top=`-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
   } 
 
   useEffect(() => {
@@ -91,7 +95,7 @@ function NavBar() {
         </ul>
         <button aria-label="Menu Button" className="menu-mobile" onClick={toggleMenu}><FontAwesomeIcon icon={faBars} inverse/></button>
       </div>
-      { modalOpen && <HamburgerMenu onClick={toggleMenu} menuRef={menuRef} /> }
+      { modalOpen && <HamburgerMenu setModalOpen={setModalOpen} menuRef={menuRef} /> }
     </div>
   )
 };

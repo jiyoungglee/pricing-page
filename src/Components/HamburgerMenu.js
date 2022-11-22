@@ -1,10 +1,9 @@
 import '../Styles/HamburgerMenu.css';
-import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import MenuOption from './MenuOption';
 
-function HamburgerMenu({ onClick, menuRef }) {
+function HamburgerMenu({ setModalOpen, menuRef }) {
   const menuOptions = [
     {
       main: "Products",
@@ -22,20 +21,22 @@ function HamburgerMenu({ onClick, menuRef }) {
     },
   ]
 
-  useEffect(() => {
-    document.body.style.overflow= 'hidden';
-    
-    return () => {
-      document.body.style.overflow='auto';
-    };
-  },[]);
+  function closeMenu() {
+    setModalOpen(false)
+    document.body.style.overflow = null;
+    const scrollPosition = document.body.style.top;
+    document.body.style.top = null;
+    document.body.style.position = null;
+    document.body.style.width = null;
+    window.scrollTo(0,parseInt(scrollPosition || '0', 10) * -1);
+  }
 
   return (
     <div className="menu-view">
       <div className="backdrop" ref={menuRef}></div>
       <div className="hamburger-menu">
         <div className="menu-top">
-          <button onClick={onClick}><FontAwesomeIcon icon={faX} size="xl" /></button>
+          <button onClick={closeMenu}><FontAwesomeIcon icon={faX} size="xl" /></button>
         </div>
         <ul className="hamburger-menu-options">
           {menuOptions.map((menuOption) => {
@@ -45,7 +46,7 @@ function HamburgerMenu({ onClick, menuRef }) {
               )
             } else {
               return (
-                <li><a className="menu-link" href="#examples">{menuOption.main}</a></li>
+                <li><a className="menu-link" href={`#${menuOption.main}`}>{menuOption.main}</a></li>
               )
             }
           }

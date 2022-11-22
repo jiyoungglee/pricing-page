@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../Styles/FAQ.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 function FAQDetail({ question, answer }) {
   const [faqOpen, setFaqOpen] = useState(false);
@@ -18,7 +18,7 @@ function FAQDetail({ question, answer }) {
       <button className="faq-button" onClick={toggleFaq}>
         <h2>
           {question}
-          <FontAwesomeIcon icon={faAngleRight} transform={faqOpen ? { rotate: 90 } : { rotate: 0}}/>
+          <FontAwesomeIcon icon={faAngleDown} rotation={faqOpen ? 0 : 90}/>
         </h2>
       </button>
       

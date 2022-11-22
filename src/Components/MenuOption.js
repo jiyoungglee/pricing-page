@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/MenuOption.css';
 import DropdownMenu from './DropdownMenu';
 
@@ -16,7 +16,7 @@ function MenuOption({ text, dropdown }){
       <li>
         <button className="dropdown-button" onClick={toggleDropdown}>
           {text}
-          <FontAwesomeIcon icon={faAngleRight} rotation={dropdownOpen ? 90 : 0} />
+          <FontAwesomeIcon icon={faAngleDown} rotation={dropdownOpen ? 0 : 90} />
         </button>
       </li>
       {(dropdownOpen && dropdown !==null) && <DropdownMenu options={dropdown} />}
